@@ -1811,7 +1811,7 @@ ul.icons {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  background-image: url("../../images/banner.jpg");
+  background-image: url("../../images/banner.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -2010,7 +2010,7 @@ ul.icons {
     width: 100%;
     z-index: 1; }
   #banner:after {
-    background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
+    background: linear-gradient(135deg, #228304 0%, #111111 74%);
     content: ' ';
     display: block;
     height: 100%;
@@ -2514,7 +2514,7 @@ body {
   #heading input, #heading select, #heading textarea {
     color: #ffffff; }
   #heading a {
-    color: #ce1b28; }
+    color: #6cce1b; }
   #heading strong, #heading b {
     color: #ffffff; }
   #heading h1, #heading h2, #heading h3, #heading h4, #heading h5, #heading h6 {
@@ -2642,7 +2642,7 @@ body {
     #heading .testimonials .content .credit strong {
       color: #ce1b28; }
   #heading:before {
-    background: linear-gradient(135deg, #ce1b28 0%, #111111 74%);
+    background: linear-gradient(135deg, #60a510 0%, #111111 74%);
     content: ' ';
     display: block;
     height: 100%;
