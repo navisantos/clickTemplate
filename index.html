@@ -12,6 +12,7 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://demo.docusign.net/clickapi/sdk/latest/docusign-click.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -41,6 +42,15 @@
 				</div>
 				<video autoplay loop muted playsinline src="images/banner.mp4"></video>
 			</section>
+		<!-- Docusign Tag -->
+			<div id="ds-terms-of-service"></div>
+			<script>docuSignClick.Clickwrap.render({
+				environment: 'https://demo.docusign.net',
+				accountId: 'ce312c40-05df-4855-aa37-3117a33cfa3d',
+				clickwrapId: '36dfd2a2-7654-4a48-9f39-15dfebdeb8e0',
+				clientUserId: 'UNIQUE_USER_ID'
+				},'#ds-terms-of-service');
+				</script>
 
 		<!-- Highlights -->
 			<section class="wrapper">
