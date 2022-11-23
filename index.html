@@ -44,13 +44,25 @@
 		<!-- Docusign Tag -->
 			<div id="ds-terms-of-service"></div>
 			<script src="https://demo.docusign.net/clickapi/sdk/latest/docusign-click.js"></script>
-			<script>docuSignClick.Clickwrap.render({
-				environment: 'https://demo.docusign.net',
-				accountId: 'ce312c40-05df-4855-aa37-3117a33cfa3d',
-				clickwrapId: '4fb747ea-a80f-4141-a893-d89f53a57239',
-				clientUserId: 'UNIQUE_USER_ID'
-				},'#ds-terms-of-service');
+			<div id="ds-clickwrap"></div>
+				<script src="https://demo.docusign.net/clickapi/sdk/latest/docusign-click.js"></script>
+				<script>
+					var uniqueID = Math.floor(Math.random() * (999999999 - 100000000) ) + 100000000;
+					docuSignClick.Clickwrap.render({
+					environment: 'https://demo.docusign.net',
+					accountId: 'ce312c40-05df-4855-aa37-3117a33cfa3d',
+					clickwrapId: '4fb747ea-a80f-4141-a893-d89f53a57239',
+					clientUserId: uniqueID,
+					documentData: {
+						fullName: 'Maria Clara',
+						email: 'maria.clara@invalid.com',
+						company: 'Maria`s Company',
+						title: 'Worker',
+						date: '28-08-2025'
+					}
+				}, '#ds-clickwrap');
 				</script>
+
 
 		<!-- Highlights -->
 			<section class="wrapper">
